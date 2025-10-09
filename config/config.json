@@ -7,11 +7,17 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "esi_flow_db_user",
-    "password": "QMZuZtdlbbf5FhP6vTNVG0zv11xusIdT",
-    "database": "esi_flow_db",
-    "host": "dpg-d0h8p3buibrs739gkl40-a",
-    "dialect": "postgres"
+    "username": "avnadmin",
+    "password": "AVNS_EtGvgRtwAVV3F0xIHFR",
+    "database": "defaultdb",
+    "host": "esi-flow-db-esi-flow.f.aivencloud.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false,
+    },
+  },
   }
 } 
 

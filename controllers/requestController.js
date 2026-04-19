@@ -7,7 +7,7 @@ const sendEmail = require("../utils/emailService"); // Adjust path if needed
 //create automated request for periodic maintenance
 const { Op } = require("sequelize");
 const dayjs = require("dayjs");
-const createNotification = require("../utils/notifcationservice"); // Adjust path if needed
+const createNotification = require("../utils/notificationservice"); // Adjust path if needed
 
 exports.createRequest = async (req, res) => {
   try {

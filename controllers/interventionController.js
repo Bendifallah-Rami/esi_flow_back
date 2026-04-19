@@ -1,6 +1,6 @@
 const { request, intervention, user, equipment } = require("../models");
 const sendEmail = require("../utils/emailService"); // Adjust path if needed
-const createNotification = require("../utils/notifcationservice"); 
+const createNotification = require("../utils/notificationservice"); 
 
 // Create an Intervention
 exports.createIntervention = async (req, res) => {

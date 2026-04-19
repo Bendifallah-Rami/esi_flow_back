@@ -1,16 +1,19 @@
 require("dotenv").config();
 const express = require("express");
 const cookieParser = require("cookie-parser");
-const {checkUser,requireAuth,requireRole}= require('./middlewares/authmiddlware');
+const {checkUser,requireAuth,requireRole}= require('./middlewares/authMiddleware');
 const app = express();
 const path = require("path");
 const cors = require('cors');
-require("./cornjobs/autoMaintenanceJob"); // Import the cron job
+require("./cronjobs/autoMaintenanceJob"); // Import the cron job
 
 // Install cors if you haven't already: npm install cors
 const allowedOrigins = [
   'https://esi-flow.vercel.app',
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'http://localhost:3001',
+  // Add your Railway frontend URL here
+  process.env.FRONTEND_URL || 'http://localhost:3000'
 ];
 
 app.use(cors({

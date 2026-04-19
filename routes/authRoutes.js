@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const authController = require("../controllers/authController");
 
-const { requireAuth, requireRole } = require("../middlewares/authmiddlware");
+const { requireAuth, requireRole } = require("../middlewares/authMiddleware");
 
 const SECRET_KEY = process.env.JWT_SECRET || "cook123";
 

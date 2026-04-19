@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const sendEmail = require("../utils/emailService"); // adjust path as needed
 const { Op } = require("sequelize"); // Import Op for advanced queries
 
-const createNotification = require("../utils/notifcationservice"); // Adjust path if needed
+const createNotification = require("../utils/notificationservice"); // Adjust path if needed
 
 const registerPage = (req, res) => {
     res.send("Register Page");

@@ -2,10 +2,10 @@
   "name": "esi_flow_back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
-    "build": "npx sequelize-cli db:migrate --env production",
-    "start": "node server.js",
+    "build": "echo 'Build complete - migrations run on start'",
+    "start": "npx sequelize-cli db:migrate --env production && node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
